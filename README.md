@@ -8,22 +8,21 @@ This package implements a virtual memory-inspired approach to context management
 
 ## Installation
 
-```bash
-bun add @nous-labs/context-gc
-```
-
-Or with npm:
+Clone the repository:
 
 ```bash
-npm install @nous-labs/context-gc
+git clone https://github.com/nous-labs/context-gc.git
 ```
 
-Zero runtime dependencies.
+Add as a local dependency in your project's `package.json`. Note: the local directory may be named `nous-context-gc` but the cloned repo will be `context-gc`.
 
-## Requirements
-
-- Bun 1.0+ or Node.js 18+
-- TypeScript 5.0+ (for type definitions)
+```json
+{
+  "dependencies": {
+    "@nous-labs/context-gc": "file:../context-gc"
+  }
+}
+```
 
 ## Architecture
 
